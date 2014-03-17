@@ -1,6 +1,6 @@
 class PostsController < ApplicationController
   
-  http_basic_authenticate_with name: "1207", password: "1207", except: [:index, :show]
+  http_basic_authenticate_with name: "damn", password: "damn", except: [:index, :show]
 
   def index
     @posts = Post.all.order('id DESC')  
