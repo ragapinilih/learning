@@ -22,7 +22,7 @@ test:
 
 production:
   adapter: mysql2
-  database: learning_production
-  username: learning
-  password: learning1234
-  host: localhost
+  database: learning
+  username: adming6D4hpe
+  password: gjzEpH2cnSvn
+  host: mysql://$OPENSHIFT_MYSQL_DB_HOST:$OPENSHIFT_MYSQL_DB_PORT/
