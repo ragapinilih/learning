@@ -23,6 +23,6 @@ test:
 production:
   adapter: mysql2
   database: learning
-  username: adming6D4hpe
+  username: adming6D4hpe  
   password: gjzEpH2cnSvn
-  host: OPENSHIFT_MYSQL_DB_HOST
+  host: 127.6.176.130
