@@ -25,4 +25,4 @@ production:
   database: learning
   username: adming6D4hpe
   password: gjzEpH2cnSvn
-  host: http://learning-gr47.rhcloud.com/
+  host: OPENSHIFT_MYSQL_DB_HOST
