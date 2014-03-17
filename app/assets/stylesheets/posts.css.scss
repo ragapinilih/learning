@@ -1,3 +1,15 @@
 // Place all the styles related to the posts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+  padding-top: 50px;
+}
+
+.posts-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+
+.empty-posts{
+  text-align: center;	
+}
