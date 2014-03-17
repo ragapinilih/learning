@@ -1,23 +1,23 @@
 <div class="container">
-	<div class="posts-template">
-		<h1>Daftar Posting</h1>
-		<%= link_to 'Posting Baru', new_post_path, :class => "btn btn-primary" %>
-	</div>
-	<div class="posts-content">
-		<% if @posts.empty? %>
-			<div class="alert alert-danger empty-posts">Belum ada postingan</div>
-		<% end %>
-		<% @posts.each do |post| %>
-			<h3><%= post.title %></h3>
-			<p>
-				<%= post.text %>
-			</p>			
-			<h6><em>Ada <%= post.comments.count %> Komentar</em></h6>
-			<div class="post-button">
-				<%= link_to 'Tampilkan', post_path(post), :class => "btn btn-primary" %>
-				<%= link_to 'Ubah', edit_post_path(post), :class => "btn btn-warning" %>
-				<%= link_to 'Hapus', post_path(post), method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-danger" %>
-			</div>
-		<% end %>
-	</div>
+  <div class="posts-template">
+    <h1>Daftar Posting</h1>
+    <%= link_to 'Posting Baru', new_post_path, :class => "btn btn-primary" %>
+  </div>
+  <div class="posts-content">
+    <% if @posts.empty? %>
+      <div class="alert alert-danger empty-posts">Belum ada postingan</div>
+    <% end %>
+    <% @posts.each do |post| %>
+      <h3><%= post.title %></h3>
+      <p>
+        <%= post.text %>
+      </p>      
+      <h6><em>Ada <%= post.comments.count %> Komentar</em></h6>
+      <div class="post-button">
+        <%= link_to 'Tampilkan', post_path(post), :class => "btn btn-primary" %>
+        <%= link_to 'Ubah', edit_post_path(post), :class => "btn btn-warning" %>
+        <%= link_to 'Hapus', post_path(post), method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-danger" %>
+      </div>
+    <% end %>
+  </div>
 </div>

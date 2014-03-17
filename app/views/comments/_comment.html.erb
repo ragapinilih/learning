@@ -1,13 +1,13 @@
 <p>
-	<strong>Dari:</strong>
-	<%= comment.commenter %>
+  <strong>Dari:</strong>
+  <%= comment.commenter %>
 </p>
 
 <p>
-	<strong>Komentar:</strong>
-	<%= comment.body %>
+  <strong>Komentar:</strong>
+  <%= comment.body %>
 </p>
 
 <p>
-	<%= link_to 'Hapus Komentar', [comment.post, comment], :class => "btn btn-danger" , method: :delete, data: { confirm: 'Apakah Kamu Yakin?'} %>
+  <%= link_to 'Hapus Komentar', [comment.post, comment], :class => "btn btn-danger" , method: :delete, data: { confirm: 'Apakah Kamu Yakin?'} %>
 </p>

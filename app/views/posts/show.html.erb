@@ -1,19 +1,19 @@
 <div class="container">
-	<h1><%= @post.title %></h1> 
-	<p>
-		<%= @post.text %>
-	</p>
-	
-	<div class="container">
-	<% if @post.comments.any? %>
-		<h3>Komentar</h3>
-		<%= render @post.comments %>
-	<% end %>
-	</div>
+  <h1><%= @post.title %></h1> 
+  <p>
+    <%= @post.text %>
+  </p>
+  
+  <div class="container">
+  <% if @post.comments.any? %>
+    <h3>Komentar</h3>
+    <%= render @post.comments %>
+  <% end %>
+  </div>
 
-	<h3>Tambah Komentar:</h3>
-	<%= render "comments/form" %>
-	 
+  <h3>Tambah Komentar:</h3>
+  <%= render "comments/form" %>
+   
 <%= link_to 'Edit', edit_post_path(@post), :class => "btn btn-warning" %> 
 <%= link_to 'Kembali ke Postingan', posts_path, :class => "btn btn-primary" %>
 </div>
